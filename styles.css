@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  line-height: 2rem;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card {
+  margin: 200px 100px 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-texts {
+  background-color: hsl(244, 38%, 16%);
+  color: #fff;
+  width: 50%;
+  padding: 70px 100px 20px 70px;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-texts span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-image {
+  background: url('./image-header-desktop.jpg') no-repeat center/cover;
+  border-radius: 0 10px 10px 0;
+  width: 50%;
+}
+
+.overlay {
+  background: rgba(121, 10, 190, 0.5);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+  border-radius: 0 10px 10px 0;
+}
+
+.card-lists {
+  margin: 70px auto 40px;
+  column-count: 3;
+  column-gap: 100px;
+}
+
+.attribution {
+  font-size: 11px; 
+  text-align: center;
+  margin: 100px;
+}
+
+.attribution a { 
+  color: hsl(228, 32%, 25%); 
+}
+
+@media(max-width: 890px) {
+  .card {
+    margin: 80px 30px;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+  }
+
+  .card-texts {
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    padding: 50px 20px 10px;
+  }
+
+  h1 {
+    line-height: 2.5rem;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-lists {
+    column-count: 1;
+    margin-top: 10px;
+  }
+
+  .items {
+    margin-top: 30px;
+  }
+
+  .attribution {
+    margin-bottom: 10px;
+  }
+}
